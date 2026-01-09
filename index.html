@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Fathi 🌙</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&family=Allura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Birthday Cover -->
+  <div id="cover" onclick="openCover()">
+    <div class="cover-content">
+      <h1>Happy Birthday</h1>
+      <h2>Fathi 🤍</h2>
+      <p>Tap to open</p>
+    </div>
+  </div>
+
+  <!-- Stars -->
+  <div class="stars"></div>
+
+  <!-- Intro -->
+  <section class="intro">
+    <p>I couldn’t be there… so I made you this.</p>
+  </section>
+
+  <!-- Candle -->
+  <section class="candle-section">
+    <div class="candle" onclick="lightCandle()">
+      <div class="flame" id="flame"></div>
+    </div>
+    <p id="wishText">Tap to light the candle</p>
+  </section>
+
+  <!-- Message -->
+  <section class="message-section">
+    <p>
+      There are so many things I want to tell you.  
+      Some are too big for words.  
+      Some are quiet.  
+      But all of them are true. <br>
+      <span style="color: red; font-weight: bold;">I LOVE YOU</span>
+    </p>
+  </section>
+
+  <!-- Interactive Note -->
+  <section class="note-section">
+    <button onclick="revealNote()">Tap for a note 💌</button>
+    <p id="note"></p>
+  </section>
+
+
+  <!-- Hide & Seek: Find Me in the Stars -->
+  <section class="hide-seek-section">
+    <h2>Can you find me, Fathi? 👀</h2>
+    <p>Click the twinkling stars to find me!</p>
+    <div id="game-area"></div>
+    <p id="foundText"></p>
+  </section>
+
+  <button onclick="revealSecondNote()">One more thing 🤍</button>
+<p id="secondNote"></p>
+
+
+
+    <section class="intro">
+   <p>
+      No matter how far I am today, you are never alone. You’re my calm. You’re my home. You’re all mine.
+    </p>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
