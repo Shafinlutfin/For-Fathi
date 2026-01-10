@@ -398,3 +398,66 @@ button:hover {
   0%,100% { opacity: 0.85; }
   50% { opacity: 1; }
 }
+
+.final-tap-section {
+  margin: 80px auto 60px;
+  text-align: center;
+}
+
+.final-tap-btn {
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+  border: 1px solid #8f90c7;
+  color: #d6d6ff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.final-tap-btn:hover {
+  background: rgba(143,144,199,0.15);
+}
+
+/* Prayer (hidden at first) */
+.prayer-section {
+  margin-top: 35px;
+  max-width: 340px;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.8s ease, transform 1.8s ease;
+  pointer-events: none;
+}
+
+.prayer-section.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.prayer-title {
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  color: #cfcfea;
+  margin-bottom: 14px;
+}
+
+.prayer-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 14.5px;
+  line-height: 1.9;
+  color: #e6e6f2;
+}
+
+.ameen {
+  display: block;
+  margin-top: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffd9ec;
+}
