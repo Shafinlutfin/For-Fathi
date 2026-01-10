@@ -126,3 +126,16 @@ ellelum top value ileth onm arkum pettn manasilavula but manasilakyaa arum vidul
 
   note.style.opacity = 1;
 }
+
+
+const moon = document.getElementById("moon");
+const calmText = document.getElementById("calmText");
+
+moon.addEventListener("click", () => {
+  calmText.style.opacity = 1;
+
+  moon.style.boxShadow = "0 0 40px rgba(255,255,255,0.45)";
+  setTimeout(() => {
+    moon.style.boxShadow = "0 0 25px rgba(255,255,255,0.25)";
+  }, 800);
+});
