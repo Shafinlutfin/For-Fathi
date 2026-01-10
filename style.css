@@ -216,6 +216,7 @@ button:hover {
   height: 22px;
   box-shadow: 0 0 10px rgba(255,217,236,0.6); /* subtle hint */
 }
+
 @keyframes starTwinkle {
   from { opacity: 0.3; transform: scale(1);}
   to { opacity: 1; transform: scale(1.2);}
@@ -283,3 +284,117 @@ button:hover {
   }
 }
 
+
+
+
+.calm-section {
+  padding: 60px 20px;
+}
+
+.calm-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #bfbfe6;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.moon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #d9d9ff);
+  box-shadow: 0 0 25px rgba(255,255,255,0.25);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.moon {
+  animation: moonBreath 6s ease-in-out infinite;
+}
+
+@keyframes moonBreath {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 22px rgba(255,255,255,0.25);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 38px rgba(255,255,255,0.45);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 22px rgba(255,255,255,0.25);
+  }
+}
+
+
+.moon:active {
+  animation-play-state: paused;
+  transform: scale(1.02);
+}
+
+
+.moon:active {
+  transform: scale(0.95);
+}
+
+.calm-text {
+  margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #ffd9ec;
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+
+
+.if-there {
+  margin: 70px auto;
+  max-width: 340px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.if-title {
+  font-family: 'Allura', cursive;
+  font-size: 32px;
+  color: #ffd9ec;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp 1.6s ease forwards;
+}
+
+.if-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #cfcfea;
+  opacity: 0;
+  animation: fadeUp 1.6s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.if-title {
+  animation: fadeUp 1.6s ease forwards, moonPulse 6s ease-in-out infinite;
+}
+
+@keyframes moonPulse {
+  0%,100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
