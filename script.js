@@ -139,3 +139,8 @@ moon.addEventListener("click", () => {
     moon.style.boxShadow = "0 0 25px rgba(255,255,255,0.25)";
   }, 800);
 });
+
+function revealPrayer() {
+  const prayer = document.getElementById("prayer");
+  prayer.classList.add("show");
+}
